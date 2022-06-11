@@ -16,6 +16,8 @@
 		E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA12854DD1A0057432A /* Resource.swift */; };
 		E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */; };
 		E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA92854DF8A0057432A /* ViewCode.swift */; };
+		E2DB1EB12854E09F0057432A /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EAF2854E09F0057432A /* UITableView+Reusable.swift */; };
+		E2DB1EB22854E09F0057432A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB02854E09F0057432A /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		E2DB1EA12854DD1A0057432A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		E2DB1EA92854DF8A0057432A /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		E2DB1EAF2854E09F0057432A /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Reusable.swift"; path = "../../../../Mobile_iOS_Mindvalley/Mindvalley/Library/Reusable/UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		E2DB1EB02854E09F0057432A /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = ../../../../Mobile_iOS_Mindvalley/Mindvalley/Library/Reusable/Reusable.swift; sourceTree = "<group>"; };
+		E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		E2DB1EB52854E0A60057432A /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +126,21 @@
 		E2DB1EA82854DF6B0057432A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1EB32854E0A10057432A /* Reusable */,
+				E2DB1EB02854E09F0057432A /* Reusable.swift */,
+				E2DB1EAF2854E09F0057432A /* UITableView+Reusable.swift */,
 				E2DB1EA92854DF8A0057432A /* ViewCode.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E2DB1EB32854E0A10057432A /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1EB52854E0A60057432A /* Reusable.swift */,
+				E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +216,9 @@
 				E2DB1EA22854DD1A0057432A /* NetworkServiceType.swift in Sources */,
 				E2DB1E882854DB8B0057432A /* AppDelegate.swift in Sources */,
 				E2DB1EA32854DD1A0057432A /* NetworkService.swift in Sources */,
+				E2DB1EB22854E09F0057432A /* Reusable.swift in Sources */,
 				E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */,
+				E2DB1EB12854E09F0057432A /* UITableView+Reusable.swift in Sources */,
 				E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */,
 				E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */,
 				E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */,
