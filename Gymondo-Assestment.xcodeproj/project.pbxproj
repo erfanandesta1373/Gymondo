@@ -21,6 +21,11 @@
 		E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */; };
 		E2DB1EC42854E4C90057432A /* ExercisesFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC32854E4C90057432A /* ExercisesFlowCoordinator.swift */; };
 		E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */; };
+		E2DB1EC82854E7DF0057432A /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC72854E7DF0057432A /* Exercises.swift */; };
+		E2DB1ECA2854E8E30057432A /* Exercises+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC92854E8E30057432A /* Exercises+Resource.swift */; };
+		E2DB1ECC2854E9370057432A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ECB2854E9370057432A /* APIConstants.swift */; };
+		E2DB1ECE2854EF090057432A /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ECD2854EF090057432A /* ExercisesTableViewController.swift */; };
+		E2DB1ED02854EF150057432A /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ECF2854EF150057432A /* ExercisesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationComponentFactory.swift; sourceTree = "<group>"; };
 		E2DB1EC32854E4C90057432A /* ExercisesFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesFlowCoordinator.swift; sourceTree = "<group>"; };
 		E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesFlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
+		E2DB1EC72854E7DF0057432A /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		E2DB1EC92854E8E30057432A /* Exercises+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+Resource.swift"; sourceTree = "<group>"; };
+		E2DB1ECB2854E9370057432A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		E2DB1ECD2854EF090057432A /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
+		E2DB1ECF2854EF150057432A /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,7 @@
 				E2DB1E902854DB8C0057432A /* Assets.xcassets */,
 				E2DB1E922854DB8C0057432A /* LaunchScreen.storyboard */,
 				E2DB1E952854DB8C0057432A /* Info.plist */,
+				E2DB1ECB2854E9370057432A /* APIConstants.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 		E2DB1EBF2854E4740057432A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1ECD2854EF090057432A /* ExercisesTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +200,8 @@
 		E2DB1EC02854E47C0057432A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1EC72854E7DF0057432A /* Exercises.swift */,
+				E2DB1EC92854E8E30057432A /* Exercises+Resource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +209,7 @@
 		E2DB1EC12854E4800057432A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1ECF2854EF150057432A /* ExercisesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -288,8 +303,13 @@
 				E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */,
 				E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */,
 				E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */,
+				E2DB1ED02854EF150057432A /* ExercisesViewModel.swift in Sources */,
 				E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */,
+				E2DB1ECE2854EF090057432A /* ExercisesTableViewController.swift in Sources */,
+				E2DB1ECC2854E9370057432A /* APIConstants.swift in Sources */,
 				E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */,
+				E2DB1EC82854E7DF0057432A /* Exercises.swift in Sources */,
+				E2DB1ECA2854E8E30057432A /* Exercises+Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
