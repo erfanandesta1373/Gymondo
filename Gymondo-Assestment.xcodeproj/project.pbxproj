@@ -11,6 +11,11 @@
 		E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1E892854DB8B0057432A /* SceneDelegate.swift */; };
 		E2DB1E912854DB8C0057432A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DB1E902854DB8C0057432A /* Assets.xcassets */; };
 		E2DB1E942854DB8C0057432A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DB1E922854DB8C0057432A /* LaunchScreen.storyboard */; };
+		E2DB1EA22854DD1A0057432A /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1E9F2854DD1A0057432A /* NetworkServiceType.swift */; };
+		E2DB1EA32854DD1A0057432A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA02854DD1A0057432A /* NetworkService.swift */; };
+		E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA12854DD1A0057432A /* Resource.swift */; };
+		E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */; };
+		E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA92854DF8A0057432A /* ViewCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		E2DB1E902854DB8C0057432A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2DB1E932854DB8C0057432A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2DB1E952854DB8C0057432A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DB1E9F2854DD1A0057432A /* NetworkServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
+		E2DB1EA02854DD1A0057432A /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E2DB1EA12854DD1A0057432A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
+		E2DB1EA92854DF8A0057432A /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +91,38 @@
 		E2DB1E9D2854DC310057432A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1EA82854DF6B0057432A /* Protocols */,
+				E2DB1EA72854DF640057432A /* Extensions */,
+				E2DB1E9E2854DD1A0057432A /* Network */,
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E2DB1E9E2854DD1A0057432A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1E9F2854DD1A0057432A /* NetworkServiceType.swift */,
+				E2DB1EA02854DD1A0057432A /* NetworkService.swift */,
+				E2DB1EA12854DD1A0057432A /* Resource.swift */,
+			);
+			name = Network;
+			path = "../../../picnic-ios-erfanandesta1373/Gif/Sources/Services/Network";
+			sourceTree = "<group>";
+		};
+		E2DB1EA72854DF640057432A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2DB1EA82854DF6B0057432A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1EA92854DF8A0057432A /* ViewCode.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DB1EA22854DD1A0057432A /* NetworkServiceType.swift in Sources */,
 				E2DB1E882854DB8B0057432A /* AppDelegate.swift in Sources */,
+				E2DB1EA32854DD1A0057432A /* NetworkService.swift in Sources */,
+				E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */,
+				E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */,
+				E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */,
 				E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
