@@ -16,8 +16,9 @@
 		E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA12854DD1A0057432A /* Resource.swift */; };
 		E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */; };
 		E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EA92854DF8A0057432A /* ViewCode.swift */; };
-		E2DB1EB12854E09F0057432A /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EAF2854E09F0057432A /* UITableView+Reusable.swift */; };
-		E2DB1EB22854E09F0057432A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB02854E09F0057432A /* Reusable.swift */; };
+		E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB92854E2770057432A /* ApplicationFlowCoordinator.swift */; };
+		E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EBB2854E2920057432A /* FlowCoordinator.swift */; };
+		E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		E2DB1EA12854DD1A0057432A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		E2DB1EA92854DF8A0057432A /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
-		E2DB1EAF2854E09F0057432A /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Reusable.swift"; path = "../../../../Mobile_iOS_Mindvalley/Mindvalley/Library/Reusable/UITableView+Reusable.swift"; sourceTree = "<group>"; };
-		E2DB1EB02854E09F0057432A /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = ../../../../Mobile_iOS_Mindvalley/Mindvalley/Library/Reusable/Reusable.swift; sourceTree = "<group>"; };
 		E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		E2DB1EB52854E0A60057432A /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		E2DB1EB92854E2770057432A /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
+		E2DB1EBB2854E2920057432A /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationComponentFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		E2DB1E862854DB8B0057432A /* Gymondo-Assestment */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1EB82854E2670057432A /* FlowCoordinators */,
 				E2DB1E9D2854DC310057432A /* Libraries */,
 				E2DB1E9C2854DC240057432A /* Modules */,
 				E2DB1E9B2854DC1C0057432A /* Supporting Files */,
@@ -90,6 +93,8 @@
 		E2DB1E9C2854DC240057432A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1EB72854E1A90057432A /* ExerciseInfo */,
+				E2DB1EB62854E1A10057432A /* Exercises */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -127,8 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				E2DB1EB32854E0A10057432A /* Reusable */,
-				E2DB1EB02854E09F0057432A /* Reusable.swift */,
-				E2DB1EAF2854E09F0057432A /* UITableView+Reusable.swift */,
 				E2DB1EA92854DF8A0057432A /* ViewCode.swift */,
 			);
 			path = Protocols;
@@ -141,6 +144,54 @@
 				E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		E2DB1EB62854E1A10057432A /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1EC12854E4800057432A /* ViewModels */,
+				E2DB1EC02854E47C0057432A /* Models */,
+				E2DB1EBF2854E4740057432A /* ViewControllers */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		E2DB1EB72854E1A90057432A /* ExerciseInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExerciseInfo;
+			sourceTree = "<group>";
+		};
+		E2DB1EB82854E2670057432A /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1EB92854E2770057432A /* ApplicationFlowCoordinator.swift */,
+				E2DB1EBB2854E2920057432A /* FlowCoordinator.swift */,
+				E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		E2DB1EBF2854E4740057432A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E2DB1EC02854E47C0057432A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2DB1EC12854E4800057432A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,12 +267,13 @@
 				E2DB1EA22854DD1A0057432A /* NetworkServiceType.swift in Sources */,
 				E2DB1E882854DB8B0057432A /* AppDelegate.swift in Sources */,
 				E2DB1EA32854DD1A0057432A /* NetworkService.swift in Sources */,
-				E2DB1EB22854E09F0057432A /* Reusable.swift in Sources */,
 				E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */,
-				E2DB1EB12854E09F0057432A /* UITableView+Reusable.swift in Sources */,
 				E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */,
 				E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */,
+				E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */,
+				E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */,
 				E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */,
+				E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
