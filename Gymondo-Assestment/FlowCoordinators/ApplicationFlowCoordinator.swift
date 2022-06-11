@@ -7,9 +7,7 @@
 
 import UIKit
 
-protocol ApplicationFlowCoordinatorDependencyProvider {
-    
-}
+protocol ApplicationFlowCoordinatorDependencyProvider: ExercisesFlowCoordinatorDependencyProvider {}
 class ApplicationFlowCoordianator: FlowCoordinator {
     
     typealias DependencyProvider = ApplicationFlowCoordinatorDependencyProvider
@@ -24,7 +22,9 @@ class ApplicationFlowCoordianator: FlowCoordinator {
     }
     
     func start() {
-        
+        let exercisesFlowCoordinator = ExercisesFlowCoordinator(window: window, dependencyProvider: dependencyProvider)
+        childCoordinators = [exercisesFlowCoordinator]
+        exercisesFlowCoordinator.start()
     }
 }
 

@@ -19,6 +19,8 @@
 		E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB92854E2770057432A /* ApplicationFlowCoordinator.swift */; };
 		E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EBB2854E2920057432A /* FlowCoordinator.swift */; };
 		E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */; };
+		E2DB1EC42854E4C90057432A /* ExercisesFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC32854E4C90057432A /* ExercisesFlowCoordinator.swift */; };
+		E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E2DB1EB92854E2770057432A /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
 		E2DB1EBB2854E2920057432A /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E2DB1EBD2854E4090057432A /* ApplicationComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationComponentFactory.swift; sourceTree = "<group>"; };
+		E2DB1EC32854E4C90057432A /* ExercisesFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesFlowCoordinator.swift; sourceTree = "<group>"; };
+		E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesFlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		E2DB1EB62854E1A10057432A /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				E2DB1EC22854E4BB0057432A /* FlowCoordinator */,
 				E2DB1EC12854E4800057432A /* ViewModels */,
 				E2DB1EC02854E47C0057432A /* Models */,
 				E2DB1EBF2854E4740057432A /* ViewControllers */,
@@ -192,6 +197,15 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E2DB1EC22854E4BB0057432A /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB1EC32854E4C90057432A /* ExercisesFlowCoordinator.swift */,
+				E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */,
+			);
+			path = FlowCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +283,13 @@
 				E2DB1EA32854DD1A0057432A /* NetworkService.swift in Sources */,
 				E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */,
 				E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */,
+				E2DB1EC42854E4C90057432A /* ExercisesFlowCoordinator.swift in Sources */,
 				E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */,
 				E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */,
 				E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */,
 				E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */,
 				E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */,
+				E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
