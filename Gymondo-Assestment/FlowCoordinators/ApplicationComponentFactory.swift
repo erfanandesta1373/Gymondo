@@ -6,5 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
-class ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider {}
+class ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider {
+    func exercises() -> UINavigationController {
+        let viewModel = ExercisesViewModel()
+        let vc = ExercisesTableViewController(viewModel: viewModel)
+        return UINavigationController(rootViewController: vc)
+    }
+    
+    func exerciseInfo(with id: Int) -> UIViewController {
+        return UIViewController()
+    }
+}
