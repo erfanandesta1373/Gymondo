@@ -19,11 +19,6 @@ public protocol Reusable: NSObjectProtocol {
   static var reuseIdentifier: String { get }
 }
 
-/// Make your `UITableViewCell` and `UICollectionViewCell` subclasses
-/// conform to this typealias when they *are* NIB-based
-/// to be able to dequeue them in a type-safe manner
-public typealias NibReusable = Reusable & NibLoadable
-
 // MARK: - Default implementation
 
 public extension Reusable {
