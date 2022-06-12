@@ -9,8 +9,8 @@ import Foundation
 
 class ExercisesResource {
     
-    func exercises() -> Resource<[Exercise]> {
-        return Resource<[Exercise]>(url: APIConstants.exercisesUrl)
+    func exercises() -> Resource<Exercises> {
+        return Resource<Exercises>(url: APIConstants.exercisesUrl)
     }
     func exerciseImage(with id: Int) -> Resource<ExerciseImage> {
         let url = APIConstants.exerciseImageUrl.appendingPathComponent("\(id)")
