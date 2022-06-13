@@ -8,6 +8,6 @@
 import UIKit
 
 protocol ExercisesFlowCoordinatorDependencyProvider {
-    func exercises() -> UINavigationController
-    func exerciseInfo(with id: Int) -> UIViewController
+    func exercises(with navigator: ExercisesFlowCoordinator) -> UINavigationController
+    func exerciseInfoCoordinator(with id: Int, navigationController: UINavigationController) -> ExerciseInfoFlowCoordinator
 }

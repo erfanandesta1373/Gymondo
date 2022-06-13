@@ -1,40 +1,38 @@
 //
-//  ExercisesFlowCoordinator.swift
+//  ExerciseInfoFlowCoordinator.swift
 //  Gymondo-Assestment
 //
-//  Created by Erfan Andesta on 3/21/1401 AP.
+//  Created by Erfan Andesta on 3/23/1401 AP.
 //
 
 import UIKit
 
-class ExercisesFlowCoordinator: NSObject, FlowCoordinator {
+class ExerciseInfoFlowCoordinator: NSObject, FlowCoordinator {
     
-    typealias DependencyProvider = ExercisesFlowCoordinatorDependencyProvider
+    typealias DependencyProvider = ExerciseInfloFlowCoordinatorDependencyProvider
     
-    private let window: UIWindow
     private let dependencyProvider: DependencyProvider
-    private var navigationController: UINavigationController?
+    private var navigationController: UINavigationController
     var childCoordinators = [FlowCoordinator]()
+    private let id: Int
     
-    init(window: UIWindow, dependencyProvider: DependencyProvider) {
-        self.window = window
+    init(navigationController: UINavigationController, dependencyProvider: DependencyProvider, id: Int) {
+        self.navigationController = navigationController
         self.dependencyProvider = dependencyProvider
+        self.id = id
     }
     
     func start() {
-        let exercisesVC = dependencyProvider.exercises(with: self)
-        window.rootViewController = exercisesVC
-        navigationController = exercisesVC
-        navigationController?.delegate = self
+        let exerciseInfoVC = dependencyProvider.exerciseInfo(with: id, withNavigator: self)
+        navigationController.pushViewController(exerciseInfoVC, animated: true)
     }
     func showExerciseDetail(with id: Int) {
-        let exerciseInfoCoordinator = dependencyProvider.exerciseInfoCoordinator(with: id, navigationController: navigationController ?? UINavigationController())
+        let exerciseInfoCoordinator = dependencyProvider.exerciseInfoCoordinator(with: id, navigationController: navigationController)
         exerciseInfoCoordinator.start()
         childCoordinators.append(exerciseInfoCoordinator)
     }
-
 }
-extension ExercisesFlowCoordinator: UINavigationControllerDelegate {
+extension ExerciseInfoFlowCoordinator: UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         
