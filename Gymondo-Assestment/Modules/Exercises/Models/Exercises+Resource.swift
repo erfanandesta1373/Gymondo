@@ -12,8 +12,8 @@ class ExercisesResource {
     func exercises() -> Resource<Exercises> {
         return Resource<Exercises>(url: APIConstants.exercisesUrl)
     }
-    func exerciseImage(with id: Int) -> Resource<ExerciseImage> {
+    func exerciseImage(with id: Int) -> Resource<ExerciseImage?> {
         let url = APIConstants.exerciseImageUrl.appendingPathComponent("\(id)")
-        return Resource<ExerciseImage>(url: url)
+        return Resource<ExerciseImage?>(url: url)
     }
 }

@@ -39,7 +39,6 @@
 		E2DB1ED72854F14C0057432A /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */; };
 		E2DB1EDD2854F3210057432A /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EDA2854F3210057432A /* ImageLoaderService.swift */; };
 		E2DB1EDE2854F3210057432A /* ImageLoaderServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EDB2854F3210057432A /* ImageLoaderServiceType.swift */; };
-		E2DB1EE02854F4840057432A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EDF2854F4840057432A /* UIImageView+Extension.swift */; };
 		E2DB1EE22854F80C0057432A /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EE12854F80C0057432A /* ExerciseViewModel.swift */; };
 		E2DB1EE62855022E0057432A /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EE52855022E0057432A /* Scheduler.swift */; };
 		E2DB1EEC28562E720057432A /* ExerciseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EEB28562E720057432A /* ExerciseInfoTableViewController.swift */; };
@@ -86,7 +85,6 @@
 		E2DB1ED42854F0970057432A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E2DB1EDA2854F3210057432A /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
 		E2DB1EDB2854F3210057432A /* ImageLoaderServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderServiceType.swift; sourceTree = "<group>"; };
-		E2DB1EDF2854F4840057432A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		E2DB1EE12854F80C0057432A /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		E2DB1EE52855022E0057432A /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		E2DB1EEB28562E720057432A /* ExerciseInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			children = (
 				E2DB1EA52854DF0B0057432A /* Publisher+Extension.swift */,
 				E2DB1ED42854F0970057432A /* UIView+Extension.swift */,
-				E2DB1EDF2854F4840057432A /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -457,7 +454,6 @@
 				E2DB1ECE2854EF090057432A /* ExercisesTableViewController.swift in Sources */,
 				E2DB1EFB285632150057432A /* UICollectionView+Reusable.swift in Sources */,
 				E2DB1EF228562F810057432A /* ExerciseInfoNameTableViewCell.swift in Sources */,
-				E2DB1EE02854F4840057432A /* UIImageView+Extension.swift in Sources */,
 				E2CE012F28578630003C626E /* ExerciseInfoFlowCoordinator.swift in Sources */,
 				E2DB1ECC2854E9370057432A /* APIConstants.swift in Sources */,
 				E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */,
