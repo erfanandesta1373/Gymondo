@@ -74,13 +74,16 @@ class ExerciseInfoViewModel {
     }
     private func getExerciseImage(with url: String) -> AnyPublisher<UIImage, Never> {
         let placeholder = UIImage(named: "placeholder")!
-        guard let url = URL(string: url) else { return Just(placeholder).eraseToAnyPublisher() }
-        let image = imageLoaderService.loadImage(from: url)
+        return Deferred {
+             return Just(url)
+        }
+            .flatMap { [unowned self] url -> AnyPublisher<UIImage?, Never> in
+                guard let url = URL(string: url) else { return .just(placeholder) }
+                return self.imageLoaderService.loadImage(from: url)
+            }
             .compactMap({ $0 ?? placeholder })
             .subscribe(on: Scheduler.backgroundWorkScheduler)
             .receive(on: Scheduler.mainScheduler)
-            .share()
             .eraseToAnyPublisher()
-        return image
     }
 }
