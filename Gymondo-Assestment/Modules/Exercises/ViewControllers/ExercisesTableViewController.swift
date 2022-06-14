@@ -11,13 +11,13 @@ import Combine
 class ExercisesTableViewController: UITableViewController {
 
     //MARK: - Properties -
-    private let viewModel: ExercisesViewModel
-    private let appear = PassthroughSubject<Void, Never>()
-    private let selection = PassthroughSubject<Int, Never>()
+    private let viewModel: ExercisesViewModelProtocol
+    let appear = PassthroughSubject<Void, Never>()
+    let selection = PassthroughSubject<Int, Never>()
     private var cancellables = [AnyCancellable]()
-    private var exercise: [ExerciseViewModel] = []
+    var exercise: [ExerciseViewModel] = []
     
-    init(viewModel: ExercisesViewModel) {
+    init(viewModel: ExercisesViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -38,7 +38,7 @@ class ExercisesTableViewController: UITableViewController {
         tableView.separatorStyle = .none
         tableView.register(cellType: ExerciseTableViewCell.self)
     }
-    func bind(to viewModel: ExercisesViewModel) {
+    func bind(to viewModel: ExercisesViewModelProtocol) {
         let input = ExercisesViewModelInput(appear: appear, selection: selection)
         let output = viewModel.transform(input: input)
         

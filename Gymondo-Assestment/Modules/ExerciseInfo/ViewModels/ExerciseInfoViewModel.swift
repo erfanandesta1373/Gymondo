@@ -22,7 +22,15 @@ enum ExerciseInfoState {
 
 typealias ExerciseInfoViewModelOuput = AnyPublisher<ExerciseInfoState, Never>
 
-class ExerciseInfoViewModel {
+protocol ExerciseInfoViewModelProtocol: AnyObject {
+    func transform(input: ExerciseInfoViewModelInput) -> ExerciseInfoViewModelOuput
+    func viewModels(from exerciseInfo: ExerciseInfo) -> InfoViewModel
+    func getExerciseInfo(with id: Int) -> AnyPublisher<Result<ExerciseInfo, Error>, Never>
+    func getExerciseImage(with url: String) -> AnyPublisher<UIImage, Never>
+    
+    var navigator: ExerciseInfoFlowCoordinator? { get set }
+}
+class ExerciseInfoViewModel: ExerciseInfoViewModelProtocol {
     
     weak var navigator: ExerciseInfoFlowCoordinator?
     private let networkService: NetworkServiceType
@@ -58,10 +66,10 @@ class ExerciseInfoViewModel {
         return exerciseInfo
     }
     
-    private func viewModels(from exerciseInfo: ExerciseInfo) -> InfoViewModel {
+    func viewModels(from exerciseInfo: ExerciseInfo) -> InfoViewModel {
         return InfoViewModel(id: exerciseInfo.id, name: exerciseInfo.name, images: exerciseInfo.images.map({ getExerciseImage(with: $0) }), variations: exerciseInfo.variations)
     }
-    private func getExerciseInfo(with id: Int) -> AnyPublisher<Result<ExerciseInfo, Error>, Never> {
+    func getExerciseInfo(with id: Int) -> AnyPublisher<Result<ExerciseInfo, Error>, Never> {
         return networkService.load(ExerciseInfoResource().exerciseInfo(with: id))
             .map { .success($0) }
             .catch { error -> AnyPublisher<Result<ExerciseInfo, Error>, Never> in
@@ -72,7 +80,7 @@ class ExerciseInfoViewModel {
             .share()
             .eraseToAnyPublisher()
     }
-    private func getExerciseImage(with url: String) -> AnyPublisher<UIImage, Never> {
+    func getExerciseImage(with url: String) -> AnyPublisher<UIImage, Never> {
         let placeholder = UIImage(named: "placeholder")!
         return Deferred {
              return Just(url)

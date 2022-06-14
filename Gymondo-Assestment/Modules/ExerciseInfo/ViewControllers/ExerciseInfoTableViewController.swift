@@ -17,13 +17,13 @@ class ExerciseInfoTableViewController: UITableViewController {
     }
     
     //MARK: - Properties -
-    let viewModel: ExerciseInfoViewModel
-    private let appear: CurrentValueSubject<Int, Never>
+    let viewModel: ExerciseInfoViewModelProtocol
+    let appear: CurrentValueSubject<Int, Never>
     private let selection = PassthroughSubject<Int, Never>()
     private var cancellables = [AnyCancellable]()
-    private var exercise: InfoViewModel?
+    var exercise: InfoViewModel?
     
-    init(viewModel: ExerciseInfoViewModel, id: Int) {
+    init(viewModel: ExerciseInfoViewModelProtocol, id: Int) {
         self.viewModel = viewModel
         self.appear = CurrentValueSubject<Int, Never>(id)
         super.init(nibName: nil, bundle: nil)
@@ -50,7 +50,7 @@ class ExerciseInfoTableViewController: UITableViewController {
         tableView.register(cellType: ExerciseInfoVariationsTableViewCell.self)
     }
     
-    func bind(to viewModel: ExerciseInfoViewModel) {
+    func bind(to viewModel: ExerciseInfoViewModelProtocol) {
         let input = ExerciseInfoViewModelInput(appear: appear, selection: selection)
         let output = viewModel.transform(input: input)
         

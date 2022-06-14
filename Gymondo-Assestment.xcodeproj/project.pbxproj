@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21182FF2858D78D006271EF /* ExerciseInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21182FE2858D78D006271EF /* ExerciseInfoTests.swift */; };
 		E2CBF9A12856351600157536 /* ExerciseInfo+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A02856351600157536 /* ExerciseInfo+Resource.swift */; };
 		E2CBF9A3285636FF00157536 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A2285636FF00157536 /* InfoViewModel.swift */; };
 		E2CBF9A528564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A428564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift */; };
@@ -48,9 +49,26 @@
 		E2DB1EF428562FF30057432A /* ExerciseInfoImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EF328562FF30057432A /* ExerciseInfoImagesTableViewCell.swift */; };
 		E2DB1EF72856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EF62856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift */; };
 		E2DB1EFB285632150057432A /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EFA285632150057432A /* UICollectionView+Reusable.swift */; };
+		E2FC13822858DAFA00DBB16E /* ExercisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21182FC2858D785006271EF /* ExercisesTests.swift */; };
+		E2FC13852858DB7B00DBB16E /* ExercisesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC13842858DB7B00DBB16E /* ExercisesViewModelTests.swift */; };
+		E2FC13872858DFFD00DBB16E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC13862858DFFD00DBB16E /* Extensions.swift */; };
+		E2FC13892858E43F00DBB16E /* ExerciseInfoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC13882858E43F00DBB16E /* ExerciseInfoViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E21182F52858D650006271EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2DB1E7C2854DB8B0057432A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2DB1E832854DB8B0057432A;
+			remoteInfo = "Gymondo-Assestment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E21182F12858D650006271EF /* Gymondo-AssestmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymondo-AssestmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21182FC2858D785006271EF /* ExercisesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTests.swift; sourceTree = "<group>"; };
+		E21182FE2858D78D006271EF /* ExerciseInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoTests.swift; sourceTree = "<group>"; };
 		E2CBF9A02856351600157536 /* ExerciseInfo+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseInfo+Resource.swift"; sourceTree = "<group>"; };
 		E2CBF9A2285636FF00157536 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		E2CBF9A428564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoVariationsTableViewCell.swift; sourceTree = "<group>"; };
@@ -94,9 +112,19 @@
 		E2DB1EF328562FF30057432A /* ExerciseInfoImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoImagesTableViewCell.swift; sourceTree = "<group>"; };
 		E2DB1EF62856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2DB1EFA285632150057432A /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		E2FC13842858DB7B00DBB16E /* ExercisesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModelTests.swift; sourceTree = "<group>"; };
+		E2FC13862858DFFD00DBB16E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E2FC13882858E43F00DBB16E /* ExerciseInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E21182EE2858D650006271EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2DB1E812854DB8B0057432A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +135,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21182F22858D650006271EF /* Gymondo-AssestmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				E21182FB2858D775006271EF /* ExerciseInfo */,
+				E21182FA2858D76F006271EF /* Exercises */,
+				E2FC13862858DFFD00DBB16E /* Extensions.swift */,
+			);
+			path = "Gymondo-AssestmentTests";
+			sourceTree = "<group>";
+		};
+		E21182FA2858D76F006271EF /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E21182FC2858D785006271EF /* ExercisesTests.swift */,
+				E2FC13842858DB7B00DBB16E /* ExercisesViewModelTests.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		E21182FB2858D775006271EF /* ExerciseInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E21182FE2858D78D006271EF /* ExerciseInfoTests.swift */,
+				E2FC13882858E43F00DBB16E /* ExerciseInfoViewModelTests.swift */,
+			);
+			path = ExerciseInfo;
+			sourceTree = "<group>";
+		};
 		E2CE012D28578625003C626E /* FlowCoordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E2DB1E862854DB8B0057432A /* Gymondo-Assestment */,
+				E21182F22858D650006271EF /* Gymondo-AssestmentTests */,
 				E2DB1E852854DB8B0057432A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				E2DB1E842854DB8B0057432A /* Gymondo-Assestment.app */,
+				E21182F12858D650006271EF /* Gymondo-AssestmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -353,6 +411,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E21182F02858D650006271EF /* Gymondo-AssestmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21182F92858D650006271EF /* Build configuration list for PBXNativeTarget "Gymondo-AssestmentTests" */;
+			buildPhases = (
+				E21182ED2858D650006271EF /* Sources */,
+				E21182EE2858D650006271EF /* Frameworks */,
+				E21182EF2858D650006271EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E21182F62858D650006271EF /* PBXTargetDependency */,
+			);
+			name = "Gymondo-AssestmentTests";
+			productName = "Gymondo-AssestmentTests";
+			productReference = E21182F12858D650006271EF /* Gymondo-AssestmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E2DB1E832854DB8B0057432A /* Gymondo-Assestment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2DB1E982854DB8C0057432A /* Build configuration list for PBXNativeTarget "Gymondo-Assestment" */;
@@ -382,6 +458,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					E21182F02858D650006271EF = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = E2DB1E832854DB8B0057432A;
+					};
 					E2DB1E832854DB8B0057432A = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -403,11 +483,19 @@
 			projectRoot = "";
 			targets = (
 				E2DB1E832854DB8B0057432A /* Gymondo-Assestment */,
+				E21182F02858D650006271EF /* Gymondo-AssestmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E21182EF2858D650006271EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2DB1E822854DB8B0057432A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +508,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E21182ED2858D650006271EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21182FF2858D78D006271EF /* ExerciseInfoTests.swift in Sources */,
+				E2FC13852858DB7B00DBB16E /* ExercisesViewModelTests.swift in Sources */,
+				E2FC13822858DAFA00DBB16E /* ExercisesTests.swift in Sources */,
+				E2FC13892858E43F00DBB16E /* ExerciseInfoViewModelTests.swift in Sources */,
+				E2FC13872858DFFD00DBB16E /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2DB1E802854DB8B0057432A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +568,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E21182F62858D650006271EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2DB1E832854DB8B0057432A /* Gymondo-Assestment */;
+			targetProxy = E21182F52858D650006271EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E2DB1E922854DB8C0057432A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -480,6 +588,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E21182F72858D650006271EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54HDDP27D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erfan.Gymondo-AssestmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymondo-Assestment.app/Gymondo-Assestment";
+			};
+			name = Debug;
+		};
+		E21182F82858D650006271EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54HDDP27D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erfan.Gymondo-AssestmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymondo-Assestment.app/Gymondo-Assestment";
+			};
+			name = Release;
+		};
 		E2DB1E962854DB8C0057432A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -653,6 +799,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E21182F92858D650006271EF /* Build configuration list for PBXNativeTarget "Gymondo-AssestmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21182F72858D650006271EF /* Debug */,
+				E21182F82858D650006271EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E2DB1E7F2854DB8B0057432A /* Build configuration list for PBXProject "Gymondo-Assestment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
