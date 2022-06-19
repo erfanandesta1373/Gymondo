@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider {
     func exerciseInfoCoordinator(with id: Int, navigationController: UINavigationController) -> ExerciseInfoFlowCoordinator {
@@ -15,7 +16,11 @@ class ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider
     
     func exercises(with navigator: ExercisesFlowCoordinator) -> UINavigationController {
         let viewModel = ExercisesViewModel(navigator: navigator, networkService: NetworkService(), imageLoaderService: ImageLoaderService())
-        let vc = ExercisesTableViewController(viewModel: viewModel)
-        return UINavigationController(rootViewController: vc)
+        let view = ExerciseListView(viewModel: viewModel)
+        let host = UIHostingController(rootView: view)
+        host.title = "Exercises"
+        let nav = UINavigationController(rootViewController: host)
+        nav.navigationBar.prefersLargeTitles = true
+        return nav
     }
 }

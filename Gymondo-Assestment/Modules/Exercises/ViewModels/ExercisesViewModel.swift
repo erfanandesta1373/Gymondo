@@ -16,6 +16,8 @@ struct ExercisesViewModelInput {
 }
 
 enum ExerciseState {
+    case idle
+    case loading
     case success([ExerciseViewModel])
     case noResults
     case failure(Error)
@@ -25,19 +27,22 @@ typealias ExerciseViewModelOuput = AnyPublisher<ExerciseState, Never>
 
 
 protocol ExercisesViewModelProtocol {
-    func transform(input: ExercisesViewModelInput) -> ExerciseViewModelOuput
+    func transform(input: ExercisesViewModelInput)
     func viewModels(from exercises: [Exercise]) -> [ExerciseViewModel]
     func getExercises() -> AnyPublisher<Result<[Exercise], Error>, Never>
     func getExerciseImage(with id: Int) -> AnyPublisher<UIImage, Never>
 }
 
-class ExercisesViewModel: ExercisesViewModelProtocol {
+class ExercisesViewModel: ExercisesViewModelProtocol, ObservableObject {
     
     private weak var navigator: ExercisesFlowCoordinator?
     private let networkService: NetworkServiceType
     private let imageLoaderService: ImageLoaderServiceType
     private var cancellables = [AnyCancellable]()
     private var exerciseObjects = [Int: ExerciseImage?]()
+
+    @Published var state: ExerciseState = .idle
+    @Published var images: [UIImage] = []
     
     init(navigator: ExercisesFlowCoordinator, networkService: NetworkServiceType, imageLoaderService: ImageLoaderServiceType) {
         self.navigator = navigator
@@ -45,7 +50,7 @@ class ExercisesViewModel: ExercisesViewModelProtocol {
         self.imageLoaderService = imageLoaderService
     }
     
-    func transform(input: ExercisesViewModelInput) -> ExerciseViewModelOuput {
+    func transform(input: ExercisesViewModelInput) {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
         
@@ -54,9 +59,10 @@ class ExercisesViewModel: ExercisesViewModelProtocol {
                 navigator?.showExerciseDetail(with: id)
             }.store(in: &cancellables)
         
-        let exercises = input.appear
-            .flatMap { _ in
-                self.getExercises()
+        input.appear
+            .flatMap { _ -> AnyPublisher<Result<[Exercise], Error>, Never> in
+                self.state = .loading
+                return self.getExercises()
             }
             .map { [weak self] result -> ExerciseState in
                 switch result {
@@ -64,16 +70,13 @@ class ExercisesViewModel: ExercisesViewModelProtocol {
                 case .success(let exercises): return .success(self?.viewModels(from: exercises) ?? [])
                 case .failure(let error): return .failure(error)
                 }
-            }.eraseToAnyPublisher()
-        
-        return exercises
+            }
+            .assign(to: &$state)
     }
     
     func viewModels(from exercises: [Exercise]) -> [ExerciseViewModel] {
-        return exercises.map { exercies in
-            ExerciseViewModel(name: exercies.name, id: exercies.id) { [unowned self] id in
-                self.getExerciseImage(with: id)
-            }
+        return exercises.map { exercise in
+            ExerciseViewModel(name: exercise.name, id: exercise.id, imageLoader: self.getExerciseImage(with: exercise.id))
         }
     }
     func getExercises() -> AnyPublisher<Result<[Exercise], Error>, Never> {
@@ -111,6 +114,5 @@ class ExercisesViewModel: ExercisesViewModelProtocol {
             .subscribe(on: Scheduler.backgroundWorkScheduler)
             .receive(on: Scheduler.mainScheduler)
             .eraseToAnyPublisher()
-
     }
 }

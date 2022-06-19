@@ -8,15 +8,25 @@
 import UIKit.UIImage
 import Combine
 
-struct ExerciseViewModel {
+class ExerciseViewModel: Hashable, ObservableObject {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    static func == (lhs: ExerciseViewModel, rhs: ExerciseViewModel) -> Bool {
+        return rhs.id == lhs.id
+    }
+    
     let id: Int
-    let name: String
-    let image: AnyPublisher<UIImage, Never>
+    var name: String
+    private var cancellable: AnyCancellable?
+    @Published var image: UIImage = UIImage(named: "placeholder")!
     
-    
-    init(name: String, id: Int, imageLoader: (Int) -> AnyPublisher<UIImage, Never>) {
+    init(name: String, id: Int, imageLoader: AnyPublisher<UIImage, Never>) {
         self.name = name
         self.id = id
-        self.image = imageLoader(id)
+        cancellable = imageLoader.sink(receiveValue: { image in
+            self.image = image
+        })
     }
 }
