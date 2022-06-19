@@ -32,9 +32,7 @@
 		E2DB1EC82854E7DF0057432A /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC72854E7DF0057432A /* Exercises.swift */; };
 		E2DB1ECA2854E8E30057432A /* Exercises+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EC92854E8E30057432A /* Exercises+Resource.swift */; };
 		E2DB1ECC2854E9370057432A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ECB2854E9370057432A /* APIConstants.swift */; };
-		E2DB1ECE2854EF090057432A /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ECD2854EF090057432A /* ExercisesTableViewController.swift */; };
 		E2DB1ED02854EF150057432A /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ECF2854EF150057432A /* ExercisesViewModel.swift */; };
-		E2DB1ED32854F02E0057432A /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ED22854F02E0057432A /* ExerciseTableViewCell.swift */; };
 		E2DB1ED52854F0970057432A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ED42854F0970057432A /* UIView+Extension.swift */; };
 		E2DB1ED62854F14A0057432A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB52854E0A60057432A /* Reusable.swift */; };
 		E2DB1ED72854F14C0057432A /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */; };
@@ -49,6 +47,8 @@
 		E2DB1EF428562FF30057432A /* ExerciseInfoImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EF328562FF30057432A /* ExerciseInfoImagesTableViewCell.swift */; };
 		E2DB1EF72856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EF62856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift */; };
 		E2DB1EFB285632150057432A /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EFA285632150057432A /* UICollectionView+Reusable.swift */; };
+		E2E8D7C9285E1A57001BFE1A /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8D7C8285E1A57001BFE1A /* ExerciseView.swift */; };
+		E2E8D7CF285E27E5001BFE1A /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8D7CE285E27E5001BFE1A /* ExerciseListView.swift */; };
 		E2FC13822858DAFA00DBB16E /* ExercisesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21182FC2858D785006271EF /* ExercisesTests.swift */; };
 		E2FC13852858DB7B00DBB16E /* ExercisesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC13842858DB7B00DBB16E /* ExercisesViewModelTests.swift */; };
 		E2FC13872858DFFD00DBB16E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC13862858DFFD00DBB16E /* Extensions.swift */; };
@@ -97,9 +97,7 @@
 		E2DB1EC72854E7DF0057432A /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		E2DB1EC92854E8E30057432A /* Exercises+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+Resource.swift"; sourceTree = "<group>"; };
 		E2DB1ECB2854E9370057432A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		E2DB1ECD2854EF090057432A /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		E2DB1ECF2854EF150057432A /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
-		E2DB1ED22854F02E0057432A /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		E2DB1ED42854F0970057432A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E2DB1EDA2854F3210057432A /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
 		E2DB1EDB2854F3210057432A /* ImageLoaderServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderServiceType.swift; sourceTree = "<group>"; };
@@ -112,6 +110,8 @@
 		E2DB1EF328562FF30057432A /* ExerciseInfoImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoImagesTableViewCell.swift; sourceTree = "<group>"; };
 		E2DB1EF62856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2DB1EFA285632150057432A /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		E2E8D7C8285E1A57001BFE1A /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		E2E8D7CE285E27E5001BFE1A /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 		E2FC13842858DB7B00DBB16E /* ExercisesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModelTests.swift; sourceTree = "<group>"; };
 		E2FC13862858DFFD00DBB16E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E2FC13882858E43F00DBB16E /* ExerciseInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoViewModelTests.swift; sourceTree = "<group>"; };
@@ -277,11 +277,10 @@
 		E2DB1EB62854E1A10057432A /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				E2DB1ED12854F01E0057432A /* Cells */,
 				E2DB1EC22854E4BB0057432A /* FlowCoordinator */,
 				E2DB1EC12854E4800057432A /* ViewModels */,
 				E2DB1EC02854E47C0057432A /* Models */,
-				E2DB1EBF2854E4740057432A /* ViewControllers */,
+				E2DB1EBF2854E4740057432A /* Views */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -308,12 +307,13 @@
 			path = AppFlowCoordinators;
 			sourceTree = "<group>";
 		};
-		E2DB1EBF2854E4740057432A /* ViewControllers */ = {
+		E2DB1EBF2854E4740057432A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E2DB1ECD2854EF090057432A /* ExercisesTableViewController.swift */,
+				E2E8D7C8285E1A57001BFE1A /* ExerciseView.swift */,
+				E2E8D7CE285E27E5001BFE1A /* ExerciseListView.swift */,
 			);
-			path = ViewControllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E2DB1EC02854E47C0057432A /* Models */ = {
@@ -341,14 +341,6 @@
 				E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */,
 			);
 			path = FlowCoordinator;
-			sourceTree = "<group>";
-		};
-		E2DB1ED12854F01E0057432A /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				E2DB1ED22854F02E0057432A /* ExerciseTableViewCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		E2DB1ED82854F3210057432A /* ImageLoader */ = {
@@ -540,6 +532,7 @@
 				E2CBF9A528564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift in Sources */,
 				E2DB1ED62854F14A0057432A /* Reusable.swift in Sources */,
 				E2DB1EA42854DD1A0057432A /* Resource.swift in Sources */,
+				E2E8D7CF285E27E5001BFE1A /* ExerciseListView.swift in Sources */,
 				E2DB1EC42854E4C90057432A /* ExercisesFlowCoordinator.swift in Sources */,
 				E2DB1EA62854DF0B0057432A /* Publisher+Extension.swift in Sources */,
 				E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */,
@@ -548,16 +541,15 @@
 				E2DB1EDD2854F3210057432A /* ImageLoaderService.swift in Sources */,
 				E2DB1ED02854EF150057432A /* ExercisesViewModel.swift in Sources */,
 				E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */,
+				E2E8D7C9285E1A57001BFE1A /* ExerciseView.swift in Sources */,
 				E2DB1ED72854F14C0057432A /* UITableView+Reusable.swift in Sources */,
 				E2DB1EE62855022E0057432A /* Scheduler.swift in Sources */,
 				E2DB1ED52854F0970057432A /* UIView+Extension.swift in Sources */,
-				E2DB1ECE2854EF090057432A /* ExercisesTableViewController.swift in Sources */,
 				E2DB1EFB285632150057432A /* UICollectionView+Reusable.swift in Sources */,
 				E2DB1EF228562F810057432A /* ExerciseInfoNameTableViewCell.swift in Sources */,
 				E2CE012F28578630003C626E /* ExerciseInfoFlowCoordinator.swift in Sources */,
 				E2DB1ECC2854E9370057432A /* APIConstants.swift in Sources */,
 				E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */,
-				E2DB1ED32854F02E0057432A /* ExerciseTableViewCell.swift in Sources */,
 				E2DB1EF428562FF30057432A /* ExerciseInfoImagesTableViewCell.swift in Sources */,
 				E2DB1EC82854E7DF0057432A /* Exercises.swift in Sources */,
 				E2CE013128578693003C626E /* ExerciseInfloFlowCoordinatorDependencyProvider.swift in Sources */,
