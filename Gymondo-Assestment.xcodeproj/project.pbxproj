@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E21182FF2858D78D006271EF /* ExerciseInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21182FE2858D78D006271EF /* ExerciseInfoTests.swift */; };
+		E2C43398285F7B4200076334 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C43395285F7B4200076334 /* ImageCache.swift */; };
+		E2C43399285F7B4200076334 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C43396285F7B4200076334 /* ImageLoaderService.swift */; };
+		E2C4339A285F7B4200076334 /* ImageLoaderServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C43397285F7B4200076334 /* ImageLoaderServiceType.swift */; };
 		E2CBF9A12856351600157536 /* ExerciseInfo+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A02856351600157536 /* ExerciseInfo+Resource.swift */; };
 		E2CBF9A3285636FF00157536 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A2285636FF00157536 /* InfoViewModel.swift */; };
 		E2CBF9A528564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A428564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift */; };
 		E2CBF9A728565AE400157536 /* ExerciseInfoTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBF9A628565AE400157536 /* ExerciseInfoTextCollectionViewCell.swift */; };
 		E2CE012F28578630003C626E /* ExerciseInfoFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CE012E28578630003C626E /* ExerciseInfoFlowCoordinator.swift */; };
 		E2CE013128578693003C626E /* ExerciseInfloFlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CE013028578693003C626E /* ExerciseInfloFlowCoordinatorDependencyProvider.swift */; };
-		E2CE01382857B20B003C626E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CE01372857B20B003C626E /* ImageCache.swift */; };
 		E2DB1E882854DB8B0057432A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1E872854DB8B0057432A /* AppDelegate.swift */; };
 		E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1E892854DB8B0057432A /* SceneDelegate.swift */; };
 		E2DB1E912854DB8C0057432A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DB1E902854DB8C0057432A /* Assets.xcassets */; };
@@ -36,8 +38,6 @@
 		E2DB1ED52854F0970057432A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1ED42854F0970057432A /* UIView+Extension.swift */; };
 		E2DB1ED62854F14A0057432A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB52854E0A60057432A /* Reusable.swift */; };
 		E2DB1ED72854F14C0057432A /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EB42854E0A60057432A /* UITableView+Reusable.swift */; };
-		E2DB1EDD2854F3210057432A /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EDA2854F3210057432A /* ImageLoaderService.swift */; };
-		E2DB1EDE2854F3210057432A /* ImageLoaderServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EDB2854F3210057432A /* ImageLoaderServiceType.swift */; };
 		E2DB1EE22854F80C0057432A /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EE12854F80C0057432A /* ExerciseViewModel.swift */; };
 		E2DB1EE62855022E0057432A /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EE52855022E0057432A /* Scheduler.swift */; };
 		E2DB1EEC28562E720057432A /* ExerciseInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB1EEB28562E720057432A /* ExerciseInfoTableViewController.swift */; };
@@ -69,13 +69,15 @@
 		E21182F12858D650006271EF /* Gymondo-AssestmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymondo-AssestmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21182FC2858D785006271EF /* ExercisesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTests.swift; sourceTree = "<group>"; };
 		E21182FE2858D78D006271EF /* ExerciseInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoTests.swift; sourceTree = "<group>"; };
+		E2C43395285F7B4200076334 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		E2C43396285F7B4200076334 /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		E2C43397285F7B4200076334 /* ImageLoaderServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderServiceType.swift; sourceTree = "<group>"; };
 		E2CBF9A02856351600157536 /* ExerciseInfo+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseInfo+Resource.swift"; sourceTree = "<group>"; };
 		E2CBF9A2285636FF00157536 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		E2CBF9A428564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoVariationsTableViewCell.swift; sourceTree = "<group>"; };
 		E2CBF9A628565AE400157536 /* ExerciseInfoTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2CE012E28578630003C626E /* ExerciseInfoFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoFlowCoordinator.swift; sourceTree = "<group>"; };
 		E2CE013028578693003C626E /* ExerciseInfloFlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfloFlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
-		E2CE01372857B20B003C626E /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		E2DB1E842854DB8B0057432A /* Gymondo-Assestment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymondo-Assestment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DB1E872854DB8B0057432A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DB1E892854DB8B0057432A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,8 +101,6 @@
 		E2DB1ECB2854E9370057432A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		E2DB1ECF2854EF150057432A /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
 		E2DB1ED42854F0970057432A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		E2DB1EDA2854F3210057432A /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
-		E2DB1EDB2854F3210057432A /* ImageLoaderServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderServiceType.swift; sourceTree = "<group>"; };
 		E2DB1EE12854F80C0057432A /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		E2DB1EE52855022E0057432A /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		E2DB1EEB28562E720057432A /* ExerciseInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +162,17 @@
 			);
 			path = ExerciseInfo;
 			sourceTree = "<group>";
+		};
+		E2C43394285F7B4200076334 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E2C43395285F7B4200076334 /* ImageCache.swift */,
+				E2C43396285F7B4200076334 /* ImageLoaderService.swift */,
+				E2C43397285F7B4200076334 /* ImageLoaderServiceType.swift */,
+			);
+			name = ImageLoader;
+			path = "Gymondo-Assestment/Libraries/Network/ImageLoader";
+			sourceTree = SOURCE_ROOT;
 		};
 		E2CE012D28578625003C626E /* FlowCoordinator */ = {
 			isa = PBXGroup;
@@ -236,7 +247,7 @@
 		E2DB1E9E2854DD1A0057432A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E2DB1ED82854F3210057432A /* ImageLoader */,
+				E2C43394285F7B4200076334 /* ImageLoader */,
 				E2DB1E9F2854DD1A0057432A /* NetworkServiceType.swift */,
 				E2DB1EA02854DD1A0057432A /* NetworkService.swift */,
 				E2DB1EA12854DD1A0057432A /* Resource.swift */,
@@ -341,17 +352,6 @@
 				E2DB1EC52854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift */,
 			);
 			path = FlowCoordinator;
-			sourceTree = "<group>";
-		};
-		E2DB1ED82854F3210057432A /* ImageLoader */ = {
-			isa = PBXGroup;
-			children = (
-				E2CE01372857B20B003C626E /* ImageCache.swift */,
-				E2DB1EDA2854F3210057432A /* ImageLoaderService.swift */,
-				E2DB1EDB2854F3210057432A /* ImageLoaderServiceType.swift */,
-			);
-			name = ImageLoader;
-			path = ../../../../../TMDB/TMDB/Sources/Services/ImageLoader;
 			sourceTree = "<group>";
 		};
 		E2DB1EE728562E4F0057432A /* Cells */ = {
@@ -524,10 +524,9 @@
 				E2DB1EEC28562E720057432A /* ExerciseInfoTableViewController.swift in Sources */,
 				E2DB1EA32854DD1A0057432A /* NetworkService.swift in Sources */,
 				E2DB1EF028562E870057432A /* ExerciseInfo.swift in Sources */,
-				E2DB1EDE2854F3210057432A /* ImageLoaderServiceType.swift in Sources */,
 				E2DB1EEE28562E7D0057432A /* ExerciseInfoViewModel.swift in Sources */,
-				E2CE01382857B20B003C626E /* ImageCache.swift in Sources */,
 				E2DB1EF72856316D0057432A /* ExerciseInfoImageCollectionViewCell.swift in Sources */,
+				E2C43398285F7B4200076334 /* ImageCache.swift in Sources */,
 				E2DB1EAA2854DF8A0057432A /* ViewCode.swift in Sources */,
 				E2CBF9A528564D8000157536 /* ExerciseInfoVariationsTableViewCell.swift in Sources */,
 				E2DB1ED62854F14A0057432A /* Reusable.swift in Sources */,
@@ -538,7 +537,6 @@
 				E2DB1EBA2854E2770057432A /* ApplicationFlowCoordinator.swift in Sources */,
 				E2DB1EBE2854E4090057432A /* ApplicationComponentFactory.swift in Sources */,
 				E2DB1E8A2854DB8B0057432A /* SceneDelegate.swift in Sources */,
-				E2DB1EDD2854F3210057432A /* ImageLoaderService.swift in Sources */,
 				E2DB1ED02854EF150057432A /* ExercisesViewModel.swift in Sources */,
 				E2DB1EBC2854E2920057432A /* FlowCoordinator.swift in Sources */,
 				E2E8D7C9285E1A57001BFE1A /* ExerciseView.swift in Sources */,
@@ -548,6 +546,8 @@
 				E2DB1EFB285632150057432A /* UICollectionView+Reusable.swift in Sources */,
 				E2DB1EF228562F810057432A /* ExerciseInfoNameTableViewCell.swift in Sources */,
 				E2CE012F28578630003C626E /* ExerciseInfoFlowCoordinator.swift in Sources */,
+				E2C43399285F7B4200076334 /* ImageLoaderService.swift in Sources */,
+				E2C4339A285F7B4200076334 /* ImageLoaderServiceType.swift in Sources */,
 				E2DB1ECC2854E9370057432A /* APIConstants.swift in Sources */,
 				E2DB1EC62854E5200057432A /* ExercisesFlowCoordinatorDependencyProvider.swift in Sources */,
 				E2DB1EF428562FF30057432A /* ExerciseInfoImagesTableViewCell.swift in Sources */,
