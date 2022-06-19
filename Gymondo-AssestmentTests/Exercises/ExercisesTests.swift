@@ -20,17 +20,23 @@ class ExercisesTests: XCTestCase {
     
     func testGettingExercises() {
         let viewModel = ExercisesViewModelTests()
-        let vc = ExercisesTableViewController(viewModel: viewModel)
+        let vc = ExerciseListView(viewModel: viewModel)
         
-        vc.bind(to: viewModel)
-        
-        vc.appear.send()
         
         let expectation = self.expectation(description: "Exercises")
         
         let _ = XCTWaiter.wait(for: [expectation], timeout: 10)
         
-        XCTAssertFalse(vc.exercise.isEmpty)
+        switch viewModel.state {
+        case .idle, .loading:
+            XCTFail("Incorrect state")
+        case .success(_):
+            break
+        case .noResults:
+            XCTFail("Empty list")
+        case .failure(let error):
+            XCTFail("Failed with error: \(error)")
+        }
         
     }
     
